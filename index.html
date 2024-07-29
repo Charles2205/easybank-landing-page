@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Easybank</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../sytle.css">
-
+  <link rel="stylesheet" href="./sytle.css">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <style>
+   
+  </style>
 </head>
 <body>
 
@@ -19,7 +22,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
@@ -34,9 +37,9 @@
 <section id="hero" class="hero">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 my-auto">
-        <h1>Next generation digital banking</h1>
-        <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+      <div class="col-md-6 my-auto text-left">
+        <h1>Next generation <br>digital banking</h1>
+        <p>Take your financial life online. Your Easybank account <br> will be a one-stop-shop for spending, saving,<br>budgeting, investing, and much more.</p>
         <a href="#" class="btn btn-success btn-gradient">Request Invite</a>
       </div>
       <div class="col-md-6">
@@ -49,9 +52,9 @@
 <!-- Features Section -->
 <section id="about" class="features">
   <div class="container">
-    <h2>Why choose Easybank?</h2>
-    <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
-    <div class="row">
+    <h2 class="text-left">Why choose Easybank?</h2>
+    <p class="text-left">We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before.</p>
+    <div class="row text-left my-5">
       <div class="col-md-3 feature">
         <img src="./images/icon-online.svg" alt="Online Banking">
         <h3>Online Banking</h3>
@@ -85,7 +88,8 @@
         <div class="card">
           <img src="./images/image-currency.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Receive money in any currency with no fees</h5>
+            <a class="card-link-green" href=""><h5 class="card-title">Receive money in any currency with no fees</h5>
+            </a>
             <p class="card-text">The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single...</p>
           </div>
         </div>
@@ -94,7 +98,7 @@
         <div class="card">
           <img src="./images/image-restaurant.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Treat yourself without worrying about money</h5>
+            <a href="" class="card-link-green"><h5 class="card-title">Treat yourself without worrying about money</h5></a>
             <p class="card-text">Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you...</p>
           </div>
         </div>
@@ -103,7 +107,8 @@
         <div class="card">
           <img src="./images/image-plane.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Take your Easybank card wherever you go</h5>
+            <a href="" class="card-link-green">
+            <h5 class="card-title">Take your Easybank card wherever you go</h5></a>
             <p class="card-text">We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you...</p>
           </div>
         </div>
@@ -112,7 +117,7 @@
         <div class="card">
           <img src="./images/image-confetti.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Our invite-only Beta accounts are now live!</h5>
+            <a href="" class="card-link-green"><h5 class="card-title">Our invite-only Beta accounts are now live!</h5></a>
             <p class="card-text">After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site...</p>
           </div>
         </div>
@@ -124,10 +129,10 @@
 <!-- Footer -->
 <footer id="contact" class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 text-center">
+    <div class="row align-items-center">
+      <div class="col-md-3 text-center">
         <img src="./images/logo.svg" alt="Easybank">
-        <ul class="list-unstyled social-icons">
+        <ul class="list-unstyled social-icons d-flex justify-content-center">
           <li><a href="#"><img src="./images/icon-facebook.svg" alt=""></a></li>
           <li><a href="#"><img src="./images/icon-youtube.svg" alt=""></a></li>
           <li><a href="#"><img src="./images/icon-twitter.svg" alt=""></a></li>
@@ -135,25 +140,27 @@
           <li><a href="#"><img src="./images/icon-instagram.svg" alt=""></a></li>
         </ul>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-6 text-center">
         <div class="row">
-          <div class="col-md-6 text-left">
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="#about">About Us</a></li>
-              <li class="list-inline-item"><a href="#contact">Contact</a></li>
-              <li class="list-inline-item"><a href="#blog">Blog</a></li>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#blog">Blog</a></li>
             </ul>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="#careers">Careers</a></li>
-              <li class="list-inline-item"><a href="#support">Support</a></li>
-              <li class="list-inline-item"><a href="#privacy-policy">Privacy Policy</a></li>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#support">Support</a></li>
+              <li><a href="#privacy-policy">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
-        <div class="text-center mt-3">
-          <a href="#" class="btn btn-gradient">Request Invite</a>
-          <p class="mt-2">&copy; Easybank. All Rights Reserved</p>
-        </div>
+      </div>
+      <div class="col-md-3 text-center d-flex flex-column align-items-center">
+        <a href="#" class="btn btn-gradient mb-2">Request Invite</a>
+        <p class="mb-0">&copy; Easybank. All Rights Reserved</p>
       </div>
     </div>
   </div>
@@ -163,5 +170,40 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.6
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        const navLink = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          navLink.classList.add('active');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        navLinks.forEach(nav => nav.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  });
+</script>
 </body>
 </html>
